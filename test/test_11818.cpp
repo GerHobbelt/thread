@@ -12,6 +12,7 @@
 #include <boost/thread/future.hpp>
 #include <boost/thread/thread.hpp>
 #include <thread>
+#include <iostream> // fix error C2065: 'cout': undeclared identifier; error C2039: 'cout': is not a member of 'std'
 
 int main()
 {
