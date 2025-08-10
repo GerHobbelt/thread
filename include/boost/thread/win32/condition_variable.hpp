@@ -178,7 +178,7 @@ namespace boost
                 if(!wake_sem)
                 {
                     wake_sem=detail::win32::create_anonymous_semaphore(0,LONG_MAX);
-                    BOOST_ASSERT(wake_sem);
+                    BOOST_ASSERT(wake_sem != nullptr);
                 }
 
                 detail::interlocked_write_release(&total_count,total_count+1);
