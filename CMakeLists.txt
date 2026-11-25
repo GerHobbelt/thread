@@ -26,7 +26,7 @@ message(STATUS "Boost.Thread: threading API is ${BOOST_THREAD_THREADAPI}")
 if(BOOST_THREAD_THREADAPI STREQUAL win32)
 
   set(THREAD_SOURCES
-    src/win32/thread.cpp
+    src/win32/win-thread.cpp
     src/win32/tss_dll.cpp
     src/win32/tss_pe.cpp
     src/win32/thread_primitives.cpp
