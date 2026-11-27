@@ -299,7 +299,7 @@ rule requirements ( properties * )
 
 alias thread_sources
     : ## win32 sources ##
-      win32/thread.cpp
+      win32/win-thread.cpp
       win32/tss_dll.cpp
       win32/tss_pe.cpp
       win32/thread_primitives.cpp
